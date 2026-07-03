@@ -36,78 +36,6 @@ body {
   background-color: black;
   color: white;
 }
-/* =========================
-   SERVICE (nav)
-   Branch idea: feature/service
-   ========================= */
-
-.service-nav {
-  margin-left: auto;
-}
-
-.service-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-.service-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.service-nav a:hover {
-  color: #cccccc;
-}
-
-li {
-    text-decoration: none;
-    list-style: none;
-}
-
-li a{
-    text-decoration: none;
-}
-
-header{
-    width:100%;
-    background-color: #0F0F0F
-;
-
-    
-}
-
-nav {
-    display: flex;
-   align-items: center; 
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 8rem;
-   height: 10vh;
-   
-
-}
-.nav_links a{
-    color: #8A8780;
-}
-
-.logo_image{
-  width:3rem;
-    letter-spacing: 1px;
-    color: white;
-}
-
-.logo_color{
-    color: gold;
-}
-.nav_links{
-    display: flex;
-    gap: 3rem;
-}
-
-
 
 /* =========================
    2 VOUCHER
@@ -115,10 +43,35 @@ nav {
    ========================= */
 
 .voucher {
-  background-color: black;
-  color: white;
+background-color: black;
+color: white;
+padding: 40px;
 }
 
+.voucher h2 {
+margin-bottom: 12px;
+}
+
+.voucher > p {
+margin-bottom: 24px;
+color: #cccccc;
+}
+
+.voucher ul {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.voucher li {
+padding: 16px;
+border: 1px solid #333;
+border-radius: 8px;
+}
+
+.voucher li strong {
+color: #8A8780;
+}
 
 /* =========================
    3 HERO
