@@ -1,0 +1,116 @@
+/* =========================
+   SETUP / BASE CSS
+   Shared setup area
+   ========================= */
+
+* {
+  border: 0;  
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.page-grid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+
+/* =========================
+   1 HEADER
+   Branch idea: feature/header
+   ========================= */
+
+.header {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+/* =========================
+   2 VOUCHER
+   Branch idea: feature/voucher
+   ========================= */
+
+.voucher {
+  background-color: black;
+  color: white;
+}
+
+
+/* =========================
+   3 HERO
+   Branch idea: feature/hero
+   ========================= */
+
+.hero {
+  background-color: black;
+  color: white;
+}
+
+
+/* =========================
+   4 FOOTER
+   Branch idea: feature/footer
+   ========================= */
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+header{
+    width:100%;
+    background-color: #0F0F0F
+;
+
+    
+}
+
+nav {
+    display: flex;
+   align-items: center; 
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 8rem;
+   height: 10vh;
+   
+
+}
+.nav_links a{
+    color: #8A8780;
+}
+
+.logo_image{
+  width:3rem;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+.nav_links{
+    display: flex;
+    gap: 3rem;
+}
