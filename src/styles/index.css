@@ -6,6 +6,7 @@
 * {
   border: 0;  
   margin: 0;
+  padding: 0; /*missed this in boilerplate */
   box-sizing: border-box;
 }
 
@@ -55,10 +56,63 @@ body {
    ========================= */
 
 .hero {
-  background-color: black;
-  color: white;
+    min-height: 400px;
+    padding: 4rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    color: #F0F0F0;
+    position: relative;
+    overflow: hidden;
+
+    background-color: black;
+    color: white;
+    /* alittle redundent, mor for safety 
+    in case settings are changed elsewhore */
 }
 
+.hero::before {
+
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  transform: scale(1.05);
+  z-index: 0;
+}
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 1.2rem;
+}
+
+.hero h1 {
+    color: #222222;
+}
+
+button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffd166;
+    cursor: pointer;
+}
+
+.hero button:hover {
+  filter: brightness(1.15);
+  transform: scale(1.03);
+}
 
 /* =========================
    4 FOOTER
