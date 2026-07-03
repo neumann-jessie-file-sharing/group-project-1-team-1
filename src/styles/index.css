@@ -55,58 +55,46 @@ body {
    Branch idea: feature/hero
    ========================= */
 
+
+
 .hero {
-    min-height: 400px;
-    padding: 4rem 2rem;
+  min-height: 400px;
+  padding: 4rem 2rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-    color: #F0F0F0;
-    position: relative;
-    overflow: hidden;
-
-    background-color: black;
-    color: white;
-    /* alittle redundent, mor for safety 
-    in case settings are changed elsewhore */
-}
-
-.hero::before {
-
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../assets/hero.jpg");
+  background-color: black;
+  background-image: url("../assets/hero-blur.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(3px);
-  transform: scale(1.05);
-  z-index: 0;
+  background-repeat: no-repeat;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  text-align: center;
 }
-.hero > * {
-  position: relative;
-  z-index: 1;
+
+.hero h2 {
+  font-size: 2rem;
+  color: white;
 }
 
 .hero p {
-    max-width: 600px;
-    font-size: 1.2rem;
+  max-width: 600px;
+  font-size: 1.2rem;
 }
 
-.hero h1 {
-    color: #222222;
-}
-
-button {
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 8px;
-    background-color: #ffd166;
-    cursor: pointer;
+.hero button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffd166;
+  color: black;
+  cursor: pointer;
 }
 
 .hero button:hover {
