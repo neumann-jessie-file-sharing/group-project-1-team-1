@@ -6,6 +6,7 @@
 * {
   border: 0;  
   margin: 0;
+  padding: 0; /*missed this in boilerplate */
   box-sizing: border-box;
 }
 
@@ -101,11 +102,52 @@ nav {
    Branch idea: feature/hero
    ========================= */
 
+
+
 .hero {
+  min-height: 400px;
+  padding: 4rem 2rem;
+
   background-color: black;
+  background-image: url("../assets/hero-blur.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
   color: white;
 }
 
+.hero p {
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+
+.hero button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffd166;
+  color: black;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  filter: brightness(1.15);
+  transform: scale(1.03);
+}
 
 /* =========================
    4 FOOTER
