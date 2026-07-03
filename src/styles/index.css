@@ -158,3 +158,46 @@ nav {
   background-color: black;
   color: white;
 }
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+header{
+    width:100%;
+    background-color: #0F0F0F
+;
+
+    
+}
+
+nav {
+    display: flex;
+   align-items: center; 
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 8rem;
+   height: 10vh;
+   
+
+}
+.nav_links a{
+    color: #8A8780;
+}
+
+.logo_image{
+  width:3rem;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+.nav_links{
+    display: flex;
+    gap: 3rem;
+}
