@@ -78,9 +78,15 @@ body {
   text-align: center;
 }
 
-.hero h2 {
-  font-size: 2rem;
-  color: white;
+.hero h1 {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text-box {
+  background-color: rgba(128, 128, 128, 0.183);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  max-width: 600px;
 }
 
 .hero p {
@@ -92,7 +98,7 @@ body {
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 8px;
-  background-color: #ffd166;
+  background-color: #66ffb8;
   color: black;
   cursor: pointer;
 }
