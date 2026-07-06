@@ -38,41 +38,19 @@ body {
   color: white;
 }
 
+
+
+
 /* =========================
    2 SERVICE
    Branch idea: feature/service
    ========================= */
 
 .voucher {
-background-color: black;
-color: white;
-padding: 40px;
+  background-color: black;
+  color: white;
 }
 
-.voucher h2 {
-margin-bottom: 12px;
-}
-
-.voucher > p {
-margin-bottom: 24px;
-color: #cccccc;
-}
-
-.voucher ul {
-display: flex;
-flex-direction: column;
-gap: 16px;
-}
-
-.voucher li {
-padding: 16px;
-border: 1px solid #333;
-border-radius: 8px;
-}
-
-.voucher li strong {
-color: #8A8780;
-}
 
 /* =========================
    3 HERO
