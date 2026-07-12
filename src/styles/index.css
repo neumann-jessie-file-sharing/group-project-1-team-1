@@ -6,6 +6,7 @@
 * {
   border: 0;  
   margin: 0;
+  padding: 0; /*missed this in boilerplate */
   box-sizing: border-box;
 }
 
@@ -37,75 +38,93 @@ body {
   color: white;
 }
 
-
-li {
-    text-decoration: none;
-    list-style: none;
-}
-
-li a{
-    text-decoration: none;
-}
-
-header{
-    width:100%;
-    background-color: #0F0F0F
-;
-
-    
-}
-
-nav {
-    display: flex;
-   align-items: center; 
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 8rem;
-   height: 10vh;
-   
-
-}
-.nav_links a{
-    color: #8A8780;
-}
-
-.logo_image{
-  width:3rem;
-    letter-spacing: 1px;
-    color: white;
-}
-
-.logo_color{
-    color: gold;
-}
-.nav_links{
-    display: flex;
-    gap: 3rem;
-}
-
-
-
 /* =========================
-   2 VOUCHER
-   Branch idea: feature/voucher
+   2 SERVICE
+   Branch idea: feature/service
    ========================= */
 
 .voucher {
-  background-color: black;
-  color: white;
+background-color: black;
+color: white;
+padding: 40px;
 }
 
+.voucher h2 {
+margin-bottom: 12px;
+}
+
+.voucher > p {
+margin-bottom: 24px;
+color: #cccccc;
+}
+
+.voucher ul {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.voucher li {
+padding: 16px;
+border: 1px solid #333;
+border-radius: 8px;
+}
+
+.voucher li strong {
+color: #8A8780;
+}
 
 /* =========================
    3 HERO
    Branch idea: feature/hero
    ========================= */
 
+
+
 .hero {
+  min-height: 400px;
+  padding: 4rem 2rem;
+
   background-color: black;
+  background-image: url("../assets/hero-blur.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
   color: white;
 }
 
+.hero p {
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+
+.hero button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffd166;
+  color: black;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  filter: brightness(1.15);
+  transform: scale(1.03);
+}
 
 /* =========================
    4 FOOTER
