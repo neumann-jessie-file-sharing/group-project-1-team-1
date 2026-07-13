@@ -16,16 +16,35 @@ body {
   color: white;
 }
 
+
 .page-grid {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto auto;
+  align-content: start;
+  gap: 0;
+  row-gap: 0;
 }
+
 
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "voucher hero";
+  align-items: stretch;
+  margin-top: 0;
+  padding-top: 0;
 }
+
+.hero,
+
+.voucher {
+
+  min-width: 0;
+
+}
+
+
 
 @media (max-width: 700px) {
   .main-grid {
@@ -101,15 +120,52 @@ nav {
 
 
 /* =========================
-   2 VOUCHER
-   Branch idea: feature/voucher
+   2 SERVICE
+   Branch idea: feature/service
    ========================= */
 
 .voucher {
-  background-color: black;
-  color: white;
+background-color: black;
+color: white;
+padding: 40px;
 }
 
+.voucher h2 {
+margin-bottom: 12px;
+}
+
+.voucher > p {
+margin-bottom: 24px;
+color: #cccccc;
+}
+
+/* .voucher ul {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.voucher li {
+padding: 16px;
+border: 1px solid #333;
+border-radius: 8px;
+} */
+
+.voucher ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.voucher li {
+  padding: 12px 14px;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.voucher li strong {
+color: #8A8780;
+}
 
 /* =========================
    3 HERO
@@ -117,15 +173,13 @@ nav {
    ========================= */
 
 
-
 .hero {
-  width: clamp(360px, 45vw, 850px);
-  aspect-ratio: 994 / 724;
-  margin: 0 auto;
+  grid-area: hero;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  margin: 0;
   padding: clamp(1.5rem, 4vw, 3rem) 2rem;
-  .hero {
-
-}
 
   background-color: black;
   background-image: url("../assets/hero-blur.jpg");
@@ -207,7 +261,7 @@ header{
     
 }
 
-nav {
+/* nav {
     display: flex;
    align-items: center; 
    justify-content: space-between;
@@ -215,8 +269,16 @@ nav {
    padding: 0 8rem;
    height: 10vh;
    
+} */
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(1rem, 6vw, 8rem);
+  height: 10vh;
 }
+
 .nav_links a{
     color: #8A8780;
 }
@@ -231,4 +293,65 @@ nav {
 .nav_links{
     display: flex;
     gap: 3rem;
+}
+
+
+
+@media (max-width: 700px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "voucher";
+    width: 100%;
+  }
+
+  .hero,
+  .voucher {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero {
+    min-width: 320px;
+    margin: 0;
+    aspect-ratio: auto;
+    min-height: 360px;
+  }
+
+  .voucher {
+    min-width: 320px;
+    padding: 1rem;
+  }
+    header nav,
+
+  footer nav {
+
+    flex-direction: column;
+
+    height: auto;
+
+    padding: 1rem;
+
+    gap: 1rem;
+
+  }
+
+  header .nav_links,
+
+  footer .nav_links {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0.75rem;
+
+  }
+
+  .logo_image {
+
+    width: 2.5rem;
+
+  }
 }
